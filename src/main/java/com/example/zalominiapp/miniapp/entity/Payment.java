@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 @Entity
 @Table(name = "Payments")
@@ -21,7 +22,7 @@ public class Payment {
     private Order order;
 
     @Column(name = "paymentDate")
-    private LocalDate paymentDate;
+    private Date paymentDate;
 
     private String paymentMethod;
     private String paymentStatus;

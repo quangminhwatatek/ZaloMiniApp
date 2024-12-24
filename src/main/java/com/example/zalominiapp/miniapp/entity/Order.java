@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 @Entity
@@ -22,7 +23,7 @@ public class Order {
     private User user;
 
     @Column(name = "orderDate")
-    private java.util.Date orderDate;
+    private LocalDate orderDate;
 
     private Double totalAmount;
     private String orderStatus;
