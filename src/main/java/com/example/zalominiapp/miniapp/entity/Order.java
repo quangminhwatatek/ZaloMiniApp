@@ -23,7 +23,7 @@ public class Order {
     private User user;
 
     @Column(name = "orderDate")
-    private LocalDate orderDate;
+    private Date orderDate;
 
     private Double totalAmount;
     private String orderStatus;

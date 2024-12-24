@@ -1,5 +1,6 @@
 package com.example.zalominiapp.miniapp.utility.mapper;
 
+import com.example.zalominiapp.miniapp.dto.request.CategoryRequestDTO;
 import com.example.zalominiapp.miniapp.dto.response.CategoryResponseDTO;
 import com.example.zalominiapp.miniapp.entity.Category;
 import com.example.zalominiapp.miniapp.entity.Product;
@@ -23,4 +24,10 @@ public class CategoryMapper {
         );
     }
 
+    public Category mapToEntity(CategoryRequestDTO categoryRequestDTO) {
+        Category category = new Category();
+        category.setCategoryName(categoryRequestDTO.getCategoryName());
+
+        return category;
+    }
 }
