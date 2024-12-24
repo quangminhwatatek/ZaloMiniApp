@@ -3,6 +3,8 @@ package com.example.zalominiapp.miniapp.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDate;
+
 @Entity
 @Table(name = "Payments")
 @Data
@@ -19,7 +21,7 @@ public class Payment {
     private Order order;
 
     @Column(name = "paymentDate")
-    private java.util.Date paymentDate;
+    private LocalDate paymentDate;
 
     private String paymentMethod;
     private String paymentStatus;
