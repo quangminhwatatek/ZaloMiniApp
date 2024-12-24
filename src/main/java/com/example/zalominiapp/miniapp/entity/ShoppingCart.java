@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 @Entity
 @Table(name = "ShoppingCart")
@@ -29,5 +30,5 @@ public class ShoppingCart {
     private Integer quantity;
 
     @Column(name = "addedAt")
-    private LocalDate addedAt;
+    private Date addedAt;
 }
