@@ -12,6 +12,7 @@ public class OrderMapper {
         List<OrderItemResponseDTO> orderItemDTOs = order.getOrderItems().stream()
                 .map(orderItem -> new OrderItemResponseDTO(
                         orderItem.getOrderItemId(),
+                        order.getOrderId(),
                         orderItem.getProduct().getProductId(),
                         orderItem.getProduct().getName(),
                         orderItem.getQuantity(),

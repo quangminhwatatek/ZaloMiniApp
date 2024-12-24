@@ -8,5 +8,20 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CategoryRequestDTO {
+    public String getCategoryName() {
+        return categoryName;
+    }
+
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
+    }
+
+    public CategoryRequestDTO() {
+    }
+
+    public CategoryRequestDTO(String categoryName) {
+        this.categoryName = categoryName;
+    }
+
     private String categoryName; // Only category name needed for create/update
 }
