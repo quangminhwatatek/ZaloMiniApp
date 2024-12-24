@@ -1,6 +1,6 @@
 package com.example.zalominiapp.miniapp.exception;
 
-import com.watatek.hr.dto.response.ResponseObject;
+import com.example.zalominiapp.miniapp.dto.ResponseObject;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
